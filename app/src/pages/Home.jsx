@@ -1,10 +1,12 @@
 import Layout from "../Layout";
 import Herosection from "../components/HeroSection";
+import Dishes from "../components/Dishes";
 
 function Home() {
   return (
-    <Layout> 
+    <Layout>
       <Herosection />
+      <Dishes />
     </Layout>
   );
 }

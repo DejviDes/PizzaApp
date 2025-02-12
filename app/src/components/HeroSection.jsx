@@ -29,13 +29,13 @@ function Herosection() {
           </div>
           <div className="mt-16">
             <div className="flex flex-row gap-4 text-gray-600 items-center">
-              <div className="rounded-full border border-black p-2 text-black">
+              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
                 <FaFacebookF />
               </div>
-              <div className="rounded-full border border-black p-2 text-black">
+              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
                 <FaInstagram />
               </div>
-              <div className="rounded-full border border-black p-2 text-black">
+              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
                 <FaTwitter />
               </div>
               <div className="h-0 border w-32 border-gray-200"></div>
