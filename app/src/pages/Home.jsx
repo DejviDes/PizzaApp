@@ -1,9 +1,10 @@
 import Layout from "../Layout";
+import Herosection from "../components/HeroSection";
 
 function Home() {
   return (
     <Layout> 
-      <h1></h1>
+      <Herosection />
     </Layout>
   );
 }
