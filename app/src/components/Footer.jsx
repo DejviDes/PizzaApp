@@ -40,31 +40,31 @@ function Footer() {
 
           <div>
             <ul className="text-gray-600">
-              <li className="mb-2">Menu</li>
-              <li className="mb-2">About us</li>
-              <li className="mb-2">Contact us</li>
-              <li>Main dishes</li>
+              <li className="mb-2 cursor-pointer">Menu</li>
+              <li className="mb-2 cursor-pointer">About us</li>
+              <li className="mb-2 cursor-pointer">Contact us</li>
+              <li className="cursor-pointer">Main dishes</li>
             </ul>
           </div>
 
           <div>
             <ul className="text-gray-600">
-              <li className="mb-2">Fish & Viggies</li>
-              <li className="mb-2">Tofu Chili</li>
-              <li className="mb-2">Egg & Cucumber</li>
-              <li>Lumpia w/Sauce</li>
+              <li className="mb-2 cursor-pointer">Fish & Viggies</li>
+              <li className="mb-2 cursor-pointer">Tofu Chili</li>
+              <li className="mb-2 cursor-pointer">Egg & Cucumber</li>
+              <li className="cursor-pointer">Lumpia w/Sauce</li>
             </ul>
           </div>
 
           <div>
             <div className="flex flex-row gap-4 text-gray-600">
-              <div className="rounded-full border border-black p-2 text-black">
+              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
                 <FaFacebookF />
               </div>
-              <div className="rounded-full border border-black p-2 text-black">
+              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
                 <FaInstagram />
               </div>
-              <div className="rounded-full border border-black p-2 text-black">
+              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
                 <FaTwitter />
               </div>
             </div>
@@ -76,8 +76,8 @@ function Footer() {
             &copy;2025 Restaurants. All Right Reserved. Designed by David
           </p>
           <div className="flex flex-row gap-10">
-            <p className="text-gray-600 text-sm">Terms of Service</p>
-            <p className="text-gray-600 text-sm">Privacy Policy</p>
+            <p className="text-gray-600 text-sm cursor-pointer">Terms of Service</p>
+            <p className="text-gray-600 text-sm cursor-pointer">Privacy Policy</p>
           </div>
         </div>
       </div>

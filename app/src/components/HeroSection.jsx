@@ -4,8 +4,8 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 function Herosection() {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-2 max-w-6xl mx-auto my-24">
-        <div className="flex flex-col justify-center ml-8">
+      <div className="grid grid-cols-2 items-center max-w-6xl mx-auto my-24 px-10">
+        <div className="flex flex-col">
           <h1 className="font-medium font-serif text-5xl mb-16 max-w-sm">
             We provide the best food for you
           </h1>
@@ -28,7 +28,7 @@ function Herosection() {
             </a>
           </div>
           <div className="mt-16">
-            <div className="flex flex-row gap-4 text-gray-600">
+            <div className="flex flex-row gap-4 text-gray-600 items-center">
               <div className="rounded-full border border-black p-2 text-black">
                 <FaFacebookF />
               </div>
@@ -38,10 +38,11 @@ function Herosection() {
               <div className="rounded-full border border-black p-2 text-black">
                 <FaTwitter />
               </div>
+              <div className="h-0 border w-32 border-gray-200"></div>
             </div>
           </div>
         </div>
-        <div className="-ml-20">
+        <div className="">
           <img width={650} src={HeroImg} alt="" />
         </div>
       </div>
