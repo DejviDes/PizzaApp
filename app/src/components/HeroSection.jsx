@@ -10,7 +10,7 @@ function Herosection() {
           <h1 className="font-medium font-serif text-5xl mb-16 max-w-sm">
             We provide the best food for you
           </h1>
-          <p className="text-gray-600 text-sm max-w-xs">
+          <p className="text-gray-600 text-sm max-w-xs leading-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

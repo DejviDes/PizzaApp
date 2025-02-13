@@ -13,7 +13,7 @@ function DishesMain() {
             <h1 className="font-medium font-serif text-5xl mb-16 max-w-sm">
               Wecome to Our Restaurant
             </h1>
-            <p className="text-gray-600 text-sm max-w-xs">
+            <p className="text-gray-600 leading-6 text-sm max-w-xs">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>

@@ -19,7 +19,7 @@ function DishesCard() {
             <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
               Lumpia with Suace
             </h3>
-            <p className="text-sm text-gray-600 text-center mb-12">
+            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
               Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
               eiusmod tempor{" "}
             </p>
@@ -39,7 +39,7 @@ function DishesCard() {
             <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
               Fish and Veggie
             </h3>
-            <p className="text-sm text-gray-600 text-center mb-12">
+            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
               Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
               eiusmod tempor{" "}
             </p>
@@ -58,7 +58,7 @@ function DishesCard() {
             <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
               Tofu Chili
             </h3>
-            <p className="text-sm text-gray-600 text-center mb-12">
+            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
               Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
               eiusmod tempor{" "}
             </p>
@@ -77,7 +77,7 @@ function DishesCard() {
             <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
               Egg and Cocumber
             </h3>
-            <p className="text-sm text-gray-600 text-center mb-12">
+            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
               Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
               eiusmod tempor{" "}
             </p>
