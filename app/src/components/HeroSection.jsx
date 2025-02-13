@@ -1,10 +1,11 @@
 import HeroImg from "../assets/img/heroImg.png";
+import  HeroSubImg from "../assets/img/heroSubImg.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Herosection() {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-2 items-center max-w-6xl mx-auto my-24 px-10">
+      <div className="grid grid-cols-2 items-center max-w-6xl mx-auto my-16 px-10">
         <div className="flex flex-col">
           <h1 className="font-medium font-serif text-5xl mb-16 max-w-sm">
             We provide the best food for you
@@ -42,8 +43,9 @@ function Herosection() {
             </div>
           </div>
         </div>
-        <div className="">
-          <img width={650} src={HeroImg} alt="" />
+        <div className="relative w-full flex justify-end">
+          <img className="" src={HeroImg} alt="" />
+          <img className="absolute bottom-8 -left-48" src={HeroSubImg} alt="" />
         </div>
       </div>
     </div>
