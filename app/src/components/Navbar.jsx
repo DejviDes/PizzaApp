@@ -2,21 +2,74 @@ import Logo from "../assets/img/logo.png";
 
 function Navbar() {
   return (
-    <nav>
-      <div className="flex justify-around items-center py-12">
-        <div className="flex flex-row gap-3 items-center cursor-pointer">
-          <img className="mb-5" src={Logo} alt="" />
-          <h2 className="text-3xl font-semibold">restaurant</h2>
+    <nav
+      style={{
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        backgroundColor: "white",
+        zIndex: 10,
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+          paddingTop: "3rem",
+          paddingBottom: "3rem",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "0.75rem",
+            alignItems: "center",
+            cursor: "pointer",
+          }}
+        >
+          <img style={{ marginBottom: "1.25rem" }} src={Logo} alt="" />
+          <h2
+            style={{
+              fontSize: "1.875rem",
+              lineHeight: "2.25rem",
+              fontWeight: 600,
+            }}
+          >
+            restaurant
+          </h2>
         </div>
-        <ul className="flex flex-row gap-10 text-gray-600">
-          <li className="cursor-pointer">Menu</li>
-          <li className="cursor-pointer">Events</li>
-          <li className="cursor-pointer">Gallery</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Contact</li>
+        <ul
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "2.5rem",
+            color: "#4b5563",
+          }}
+        >
+          <li style={{ cursor: "pointer" }}>Menu</li>
+          <li style={{ cursor: "pointer" }}>Events</li>
+          <li style={{ cursor: "pointer" }}>Gallery</li>
+          <li style={{ cursor: "pointer" }}>About</li>
+          <li style={{ cursor: "pointer" }}>Contact</li>
         </ul>
         <a
-          className="bg-[#EA6D27] font-serif drop-shadow-md text-white rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md py-5 px-7 text-nowrap"
+          style={{
+            backgroundColor: "#EA6D27",
+            fontFamily: "serif",
+            filter: "drop-shadow(0 3px 3px rgb(0 0 0 / 0.12))",
+            color: "white",
+            borderTopLeftRadius: "1rem",
+            borderBottomRightRadius: "1rem",
+            borderTopRightRadius: "0.375rem",
+            borderBottomLeftRadius: "0.375rem",
+            paddingTop: "1.25rem",
+            paddingBottom: "1.25rem",
+            paddingLeft: "1.75rem",
+            paddingRight: "1.75rem",
+            textWrap: "nowrap",
+          }}
           href=""
         >
           Book a table

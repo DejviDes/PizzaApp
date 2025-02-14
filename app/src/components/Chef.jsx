@@ -3,7 +3,7 @@ import ChefImg from "../assets/img/chef.png";
 function Chef() {
   return (
     <div>
-      <div className="grid grid-cols-5 gap-5 items-center max-w-6xl mx-auto my-24">
+      <div className="grid grid-cols-5 gap-5 items-center max-w-6xl mx-auto my-24 px-10">
         <div className="flex flex-col col-span-3">
           <h1 className="font-medium font-serif text-5xl mb-12 max-w-sm">
             Our Expects Chef

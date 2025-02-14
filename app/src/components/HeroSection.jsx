@@ -1,51 +1,166 @@
 import HeroImg from "../assets/img/heroImg.png";
-import  HeroSubImg from "../assets/img/heroSubImg.png";
+import HeroSubImg from "../assets/img/heroSubImg.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Herosection() {
   return (
-    <div className="w-full">
-      <div className="grid grid-cols-2 items-center max-w-6xl mx-auto my-16 px-10">
-        <div className="flex flex-col">
-          <h1 className="font-medium font-serif text-5xl mb-16 max-w-sm">
+    <div
+      style={{ width: "100%", minHeight: "100vh", backgroundColor: "white" }}
+    >
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+          alignItems: "center",
+          maxWidth: "72rem",
+          margin: "0 auto",
+          marginBottom: "4rem",
+          paddingTop: "13rem",
+          paddingLeft: "2.5rem",
+          paddingRight: "2.5rem",
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <h1
+            style={{
+              fontWeight: 500,
+              fontFamily: "serif",
+              fontSize: "3rem",
+              lineHeight: "1",
+              marginBottom: "4rem",
+              maxWidth: "24rem",
+            }}
+          >
             We provide the best food for you
           </h1>
-          <p className="text-gray-600 text-sm max-w-xs leading-7">
+          <p
+            style={{
+              color: "#4b5563",
+              fontSize: "0.875rem",
+              lineHeight: "1.25rem",
+              maxWidth: "20rem",
+              lineHeight: "1.75rem",
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <div className="flex flex-row gap-5 mt-9">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "1.25rem",
+              marginTop: "2.25rem",
+            }}
+          >
             <a
-              className="bg-[#000000] font-serif drop-shadow-md text-white rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md py-4 px-7 text-nowrap"
+              style={{
+                backgroundColor: "#000000",
+                fontFamily: "serif",
+                filter: "drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)))",
+                color: "white",
+                borderTopLeftRadius: "1rem",
+                borderBottomRightRadius: "1rem",
+                borderTopRightRadius: "0.375rem",
+                borderBottomLeftRadius: "0.375rem",
+                paddingTop: "1rem",
+                paddingBottom: "1rem",
+                paddingLeft: "1.75rem",
+                paddingRight: "1.75rem",
+                textWrap: "nowrap",
+              }}
               href=""
             >
               Menu
             </a>
             <a
-              className="bg-[#EA6D27] font-serif drop-shadow-md text-white rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md py-4 px-7 text-nowrap"
+              style={{
+                backgroundColor: "#EA6D27",
+                fontFamily: "serif",
+                filter: "drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)))",
+                color: "white",
+                borderTopLeftRadius: "1rem",
+                borderBottomRightRadius: "1rem",
+                borderTopRightRadius: "0.375rem",
+                borderBottomLeftRadius: "0.375rem",
+                paddingTop: "1rem",
+                paddingBottom: "1rem",
+                paddingLeft: "1.75rem",
+                paddingRight: "1.75rem",
+                textWrap: "nowrap",
+              }}
               href=""
             >
               Book a table
             </a>
           </div>
-          <div className="mt-16">
-            <div className="flex flex-row gap-4 text-gray-600 items-center">
-              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
+          <div style={{ marginTop: "4rem" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "1rem",
+                color: "#4b5563",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  cursor: "pointer",
+                  borderRadius: "9999px",
+                  border: "1px solid black",
+                  padding: "0.5rem",
+                  color: "black",
+                }}
+              >
                 <FaFacebookF />
               </div>
-              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
+              <div
+                style={{
+                  cursor: "pointer",
+                  borderRadius: "9999px",
+                  border: "1px solid black",
+                  padding: "0.5rem",
+                  color: "black",
+                }}
+              >
                 <FaInstagram />
               </div>
-              <div className="cursor-pointer rounded-full border border-black p-2 text-black">
+              <div
+                style={{
+                  cursor: "pointer",
+                  borderRadius: "9999px",
+                  border: "1px solid black",
+                  padding: "0.5rem",
+                  color: "black",
+                }}
+              >
                 <FaTwitter />
               </div>
-              <div className="h-0 border w-32 border-gray-200"></div>
+              <div
+                style={{
+                  height: "0px",
+                  width: "8rem",
+                  border: "1px solid #e5e7eb",
+                }}
+              ></div>
             </div>
           </div>
         </div>
-        <div className="relative w-full flex justify-end">
-          <img className="" src={HeroImg} alt="" />
-          <img className="absolute bottom-8 -left-48" src={HeroSubImg} alt="" />
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <img src={HeroImg} alt="" />
+          <img
+            style={{ position: "absolute", bottom: "2rem", left: "-12rem" }}
+            src={HeroSubImg}
+            alt=""
+          />
         </div>
       </div>
     </div>
