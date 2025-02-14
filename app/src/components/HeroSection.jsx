@@ -37,7 +37,6 @@ function Herosection() {
             style={{
               color: "#4b5563",
               fontSize: "0.875rem",
-              lineHeight: "1.25rem",
               maxWidth: "20rem",
               lineHeight: "1.75rem",
             }}

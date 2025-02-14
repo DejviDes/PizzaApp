@@ -4,87 +4,107 @@ import Pizza3 from "../assets/img/pizza3.png";
 import Pizza4 from "../assets/img/pizza4.png";
 
 function DishesCard() {
-    return (
-        <div className="flex flex-row justify-between max-w-7xl mx-auto gap-12 pb-24">
-        <div className="flex flex-col items-center">
-          <div className="relative bg-white border-4 border-white rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-xl rounded-bl-xl px-5">
-            <div className="absolute -top-24 left-0 right-0 flex flex-col items-center">
-              <div className="relative">
-                <img className="" src={Pizza1} alt="" />
-                <div className="absolute top-6 right-0 rounded-full bg-black w-14 h-14 text-white font-semibold flex justify-center items-center">
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        maxWidth: "80rem",
+        margin: "0 auto",
+        gap: "3rem",
+        paddingBottom: "6rem",
+      }}
+    >
+      {[Pizza1, Pizza2, Pizza3, Pizza4].map((pizza, index) => (
+        <div
+          key={index}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              position: "relative",
+              backgroundColor: index === 0 ? "white" : "#f3f4f6",
+              border: "4px solid white",
+              borderTopLeftRadius: "3rem",
+              borderBottomRightRadius: "3rem",
+              borderTopRightRadius: "0.75rem",
+              borderBottomLeftRadius: "0.75rem",
+              padding: "1.25rem",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: "-6rem",
+                left: 0,
+                right: 0,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div style={{ position: "relative" }}>
+                <img src={pizza} alt="" />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "1.5rem",
+                    right: 0,
+                    borderRadius: "50%",
+                    backgroundColor: "black",
+                    width: "3.5rem",
+                    height: "3.5rem",
+                    color: "white",
+                    fontWeight: "600",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   $12
                 </div>
               </div>
             </div>
-            <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
-              Lumpia with Suace
+            <h3
+              style={{
+                fontFamily: "serif",
+                fontWeight: "500",
+                textAlign: "center",
+                fontSize: "1.125rem",
+                marginBottom: "1.25rem",
+                marginTop: "9rem",
+              }}
+            >
+              {index === 0
+                ? "Lumpia with Sauce"
+                : index === 1
+                ? "Fish and Veggie"
+                : index === 2
+                ? "Tofu Chili"
+                : "Egg and Cucumber"}
             </h3>
-            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
-              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
-              eiusmod tempor{" "}
+            <p
+              style={{
+                fontSize: "0.875rem",
+                lineHeight: "1.5rem",
+                color: "#4b5563",
+                textAlign: "center",
+                marginBottom: "3rem",
+              }}
+            >
+              Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
+              tempor
             </p>
           </div>
         </div>
-
-        <div className="flex flex-col items-center">
-          <div className="relative bg-gray-100 border-4 border-white rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-xl rounded-bl-xl px-5">
-            <div className="absolute -top-24 left-0 right-0 flex flex-col items-center">
-              <div className="relative">
-                <img className="" src={Pizza2} alt="" />
-                <div className="absolute top-6 right-0 rounded-full bg-black w-14 h-14 text-white font-semibold flex justify-center items-center">
-                  $12
-                </div>
-              </div>
-            </div>
-            <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
-              Fish and Veggie
-            </h3>
-            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
-              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
-              eiusmod tempor{" "}
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="relative bg-gray-100 border-4 border-white rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-xl rounded-bl-xl px-5">
-            <div className="absolute -top-24 left-0 right-0 flex flex-col items-center">
-              <div className="relative">
-                <img className="" src={Pizza3} alt="" />
-                <div className="absolute top-6 right-0 rounded-full bg-black w-14 h-14 text-white font-semibold flex justify-center items-center">
-                  $12
-                </div>
-              </div>
-            </div>
-            <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
-              Tofu Chili
-            </h3>
-            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
-              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
-              eiusmod tempor{" "}
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="relative bg-gray-100 border-4 border-white rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-xl rounded-bl-xl px-5">
-            <div className="absolute -top-24 left-0 right-0 flex flex-col items-center">
-              <div className="relative">
-                <img className="" src={Pizza4} alt="" />
-                <div className="absolute top-6 right-0 rounded-full bg-black w-14 h-14 text-white font-semibold flex justify-center items-center">
-                  $12
-                </div>
-              </div>
-            </div>
-            <h3 className="font-serif font-medium text-center text-lg mb-5 mt-36">
-              Egg and Cocumber
-            </h3>
-            <p className="text-sm leading-6 text-gray-600 text-center mb-12">
-              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
-              eiusmod tempor{" "}
-            </p>
-          </div>
-        </div>
-      </div>
-    )
+      ))}
+    </div>
+  );
 }
 
 export default DishesCard;

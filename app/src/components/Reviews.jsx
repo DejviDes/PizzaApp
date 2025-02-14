@@ -1,4 +1,4 @@
-import ReviewsCard from "./ReviewsCards";
+import ReviewsCards from "./ReviewsCards";
 
 function Reviews() {
   return (
@@ -12,7 +12,7 @@ function Reviews() {
           eiusmod tempor incididunt{" "}
         </p>
       </div>
-      <ReviewsCard />
+      <ReviewsCards />
     </div>
   );
 }

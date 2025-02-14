@@ -1,5 +1,7 @@
-function ReviewCard() {
-  return <div className=""></div>;
+function ReviewCards() {
+  return <div>
+    <div></div>
+  </div>;
 }
 
-export default ReviewCard;
+export default ReviewCards;
