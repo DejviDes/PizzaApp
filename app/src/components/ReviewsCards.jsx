@@ -3,7 +3,7 @@ import Person1Img from "../assets/img/person1.png";
 
 function ReviewCards() {
     return <div>
-        <div style={{width: "100%"}}>
+        <div style={{width: "100%", marginBottom: "15rem"}}>
             <div style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr 1fr",
