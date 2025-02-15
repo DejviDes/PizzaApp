@@ -35,7 +35,7 @@ function Reviews() {
             </div>
             <ReviewsCards/>
             <div style={{display: "flex", flexDirection: "column", alignItems: "center", position: "relative"}}>
-                <img style={{marginTop: "10rem"}} src={NewLetterImg}/>
+                <img style={{marginTop: "10rem"}} src={NewLetterImg} alt=""/>
                 <h1 style={{
                     fontWeight: "500",
                     fontFamily: "serif",
