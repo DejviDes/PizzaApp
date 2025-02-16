@@ -69,6 +69,7 @@ const SocialIcon = styled.div`
     border: 1px solid black;
     padding: 0.5rem;
     text-align: center;
+    color: black;
 `;
 
 const Divider = styled.div`

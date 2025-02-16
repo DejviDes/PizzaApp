@@ -173,58 +173,6 @@ function ReviewCards() {
                     <Name>Ama Ampomah</Name>
                     <Role>CEO & Founder Inc</Role>
                 </ReviewCard>
-                <ReviewCard>
-                    <ReviewImg src={Person1Img} alt=""/>
-                    <Stars>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    </Stars>
-                    <ReviewText>
-                        Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque
-                        penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                        eu aliquam quis. Ornare tincidunt tempus semper
-                    </ReviewText>
-                    <Name>Ama Ampomah</Name>
-                    <Role>CEO & Founder Inc</Role>
-                </ReviewCard> <ReviewCard>
-                <ReviewImg src={Person1Img} alt=""/>
-                <Stars>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                </Stars>
-                <ReviewText>
-                    Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque
-                    penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                    eu aliquam quis. Ornare tincidunt tempus semper
-                </ReviewText>
-                <Name>Ama Ampomah</Name>
-                <Role>CEO & Founder Inc</Role>
-            </ReviewCard> <ReviewCard>
-                <ReviewImg src={Person1Img} alt=""/>
-                <Stars>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                </Stars>
-                <ReviewText>
-                    Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque
-                    penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                    eu aliquam quis. Ornare tincidunt tempus semper
-                </ReviewText>
-                <Name>Ama Ampomah</Name>
-                <Role>CEO & Founder Inc</Role>
-            </ReviewCard>
-
-                {/* Add more ReviewCard components as needed */}
-
             </Grid>
         </ReviewContainer>
     );
