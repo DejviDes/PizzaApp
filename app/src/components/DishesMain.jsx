@@ -1,102 +1,96 @@
+import styled from "styled-components";
 import DishesMainImg from "../assets/img/dishesMainImg.png";
+
+const Container = styled.div`
+    padding-bottom: 8rem;
+`;
+
+const GridWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 80rem;
+    margin: 4rem auto;
+    padding: 0 2.5rem;
+`;
+
+const ImageWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+`;
+
+const ContentWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+`;
+
+const Heading = styled.h1`
+    font-weight: 500;
+    font-family: serif;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    max-width: 20rem;
+`;
+
+const Paragraph = styled.p`
+    color: #4b5563;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    max-width: 18rem;
+`;
+
+const ButtonWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    margin-top: 2.25rem;
+`;
+
+const ButtonBlack = styled.a`
+    background-color: #000;
+    font-family: serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 1rem 0.375rem 1rem 0.375rem;
+    padding: 1rem 1.75rem;
+    white-space: nowrap;
+    text-decoration: none;
+`;
+
+const ButtonOrange = styled.a`
+    background-color: #EA6D27;
+    font-family: serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 1rem 0.375rem 1rem 0.375rem;
+    padding: 1rem 1.75rem;
+    white-space: nowrap;
+    text-decoration: none;
+`;
 
 function DishesMain() {
     return (
-        <div style={{paddingBottom: "8rem"}}>
-            <div
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    alignItems: "center",
-                    maxWidth: "80rem",
-                    margin: "4rem auto",
-                    padding: "0 2.5rem",
-                }}
-            >
-                <div
-                    style={{width: "100%", display: "flex", justifyContent: "flex-end"}}
-                >
+        <Container>
+            <GridWrapper>
+                <ImageWrapper>
                     <img src={DishesMainImg} alt=""/>
-                </div>
-                <div
-                    style={{
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "column",
-                    }}
-                >
+                </ImageWrapper>
+                <ContentWrapper>
                     <div>
-                        <h1
-                            style={{
-                                fontWeight: "500",
-                                fontFamily: "serif",
-                                fontSize: "3rem",
-                                marginBottom: "4rem",
-                                maxWidth: "20rem",
-                            }}
-                        >
-                            Welcome to Our Restaurant
-                        </h1>
-                        <p
-                            style={{
-                                color: "#4b5563",
-                                lineHeight: "1.5rem",
-                                fontSize: "0.875rem",
-                                maxWidth: "18rem",
-                            }}
-                        >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <div
-                            style={{
-                                display: "flex",
-                                flexDirection: "row",
-                                gap: "1.25rem",
-                                marginTop: "2.25rem",
-                            }}
-                        >
-                            <a
-                                style={{
-                                    backgroundColor: "#000",
-                                    fontFamily: "serif",
-                                    boxShadow: "0px 4px 6px rgba(0,0,0,0.1)",
-                                    color: "white",
-                                    borderTopLeftRadius: "1rem",
-                                    borderBottomRightRadius: "1rem",
-                                    borderTopRightRadius: "0.375rem",
-                                    borderBottomLeftRadius: "0.375rem",
-                                    padding: "1rem 1.75rem",
-                                    whiteSpace: "nowrap",
-                                    textDecoration: "none",
-                                }}
-                                href=""
-                            >
-                                Menu
-                            </a>
-                            <a
-                                style={{
-                                    backgroundColor: "#EA6D27",
-                                    fontFamily: "serif",
-                                    boxShadow: "0px 4px 6px rgba(0,0,0,0.1)",
-                                    color: "white",
-                                    borderTopLeftRadius: "1rem",
-                                    borderBottomRightRadius: "1rem",
-                                    borderTopRightRadius: "0.375rem",
-                                    borderBottomLeftRadius: "0.375rem",
-                                    padding: "1rem 1.75rem",
-                                    whiteSpace: "nowrap",
-                                    textDecoration: "none",
-                                }}
-                                href=""
-                            >
-                                Book a table
-                            </a>
-                        </div>
+                        <Heading>Welcome to Our Restaurant</Heading>
+                        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</Paragraph>
+                        <ButtonWrapper>
+                            <ButtonBlack href="">Menu</ButtonBlack>
+                            <ButtonOrange href="">Book a table</ButtonOrange>
+                        </ButtonWrapper>
                     </div>
-                </div>
-            </div>
-        </div>
+                </ContentWrapper>
+            </GridWrapper>
+        </Container>
     );
 }
 
