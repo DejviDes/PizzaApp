@@ -1,45 +1,43 @@
+import styled from "styled-components";
+
 import DishesCard from "./DishesCard";
 import DishesMain from "./DishesMain";
 
+const DishesContainer = styled.div`
+    background-color: #f3f4f6;`;
+
+const DishesTopContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 11rem;`;
+
+const DishesHeading = styled.h1`
+    text-align: center;
+    font-weight: 500;
+    font-family: serif;
+    font-size: 3rem;
+    line-height: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;`;
+
+const DishesDescription = styled.p`
+    max-width: 20rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: center;`;
+
 function Dishes() {
     return (
-        <div style={{backgroundColor: "#f3f4f6"}}>
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    marginBottom: "11rem",
-                }}
-            >
-                <h1
-                    style={{
-                        textAlign: "center",
-                        fontWeight: 500,
-                        fontFamily: "serif",
-                        fontSize: "3rem",
-                        lineHeight: "1rem",
-                        marginTop: "4rem",
-                        marginBottom: "3rem",
-                    }}
-                >
-                    Our Special Dishes
-                </h1>
-                <p
-                    style={{
-                        maxWidth: "20rem",
-                        fontSize: "0.875rem",
-                        lineHeight: "1.5rem",
-                        color: "#4b5563",
-                    }}
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt{" "}
-                </p>
-            </div>
+        <DishesContainer>
+            <DishesTopContainer>
+                <DishesHeading>Our Special Dishes</DishesHeading>
+                <DishesDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt</DishesDescription>
+            </DishesTopContainer>
             <DishesCard/>
             <DishesMain/>
-        </div>
+        </DishesContainer>
     );
 }
 

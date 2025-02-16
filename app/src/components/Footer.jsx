@@ -1,198 +1,169 @@
+import styled from "styled-components";
 import Logo from "../assets/img/logo.png";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 
+const FooterContainer = styled.footer`
+    width: 100%;
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 6rem;
+    margin-top: 15rem;
+`;
+
+const FooterContent = styled.div`
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+`;
+
+const GridContainer = styled.div`
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+`;
+
+const LogoContainer = styled.div`
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+    cursor: pointer;
+`;
+
+const SectionTitle = styled.h2`
+    font-weight: 600;
+`;
+
+const Description = styled.p`
+    color: #4b5563;
+    margin-bottom: 1.25rem;
+`;
+
+const OpeningHours = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    color: #4b5563;
+`;
+
+const List = styled.ul`
+    color: #4b5563;
+    cursor: pointer;
+`;
+
+const ListItem = styled.li`
+    margin-bottom: 0.5rem;
+`;
+
+const SocialIcons = styled.div`
+    display: flex;
+    gap: 1rem;
+    color: #4b5563;
+`;
+
+const SocialIcon = styled.div`
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+`;
+
+const Divider = styled.div`
+    height: 1px;
+    width: 100%;
+    background-color: #e5e7eb;
+    margin-top: 5rem;
+`;
+
+const FooterBottom = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+`;
+
+const FooterLinks = styled.div`
+    display: flex;
+    gap: 2.5rem;
+    cursor: pointer;
+`;
+
 function Footer() {
     return (
-        <footer
-            style={{
-                width: "100%",
-                backgroundColor: "white",
-                paddingTop: "2.5rem",
-                paddingBottom: "6rem",
-                marginTop: "15rem",
-            }}
-        >
-            <div style={{maxWidth: "90rem", margin: "0 auto", padding: "0 2rem"}}>
-                {/* Horná časť */}
-                <div
-                    style={{
-                        display: "grid",
-                        alignItems: "center",
-                        gridTemplateColumns: "repeat(5, 1fr)",
-                        gap: "2.5rem",
-                    }}
-                >
-                    <div
-                        style={{
-                            gridColumn: "span 2",
-                            display: "flex",
-                            flexDirection: "row",
-                            gap: "0.75rem",
-                            alignItems: "center",
-                            cursor: "pointer",
-                        }}
-                    >
-                        <img
-                            style={{marginBottom: "1.25rem"}}
-                            src={Logo}
-                            alt="Restaurant Logo"
-                        />
-                        <h2 style={{fontSize: "1.875rem", fontWeight: "600"}}>
-                            restaurant
-                        </h2>
-                    </div>
-                    <h2 style={{fontWeight: "600"}}>NAVIGATION</h2>
-                    <h2 style={{fontWeight: "600"}}>DISHES</h2>
-                    <h2 style={{fontWeight: "600"}}>FOLLOW US</h2>
-                </div>
+        <FooterContainer>
+            <FooterContent>
+                <GridContainer>
+                    <LogoContainer>
+                        <img src={Logo} alt="Restaurant Logo"/>
+                        <h2 style={{fontSize: "1.875rem", fontWeight: "600"}}>restaurant</h2>
+                    </LogoContainer>
+                    <SectionTitle>NAVIGATION</SectionTitle>
+                    <SectionTitle>DISHES</SectionTitle>
+                    <SectionTitle>FOLLOW US</SectionTitle>
+                </GridContainer>
 
-                {/* Spodná časť */}
-                <div
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(5, 1fr)",
-                        gap: "2.5rem",
-                        fontSize: "0.875rem",
-                        lineHeight: "1.25rem",
-                        marginTop: "2rem",
-                    }}
-                >
-                    {/* Popis + otváracie hodiny */}
+                <GridContainer style={{marginTop: "2rem", fontSize: "0.875rem", lineHeight: "1.25rem"}}>
                     <div style={{gridColumn: "span 2"}}>
-                        <p style={{color: "#4B5563", marginBottom: "1.25rem"}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore.
-                        </p>
-
-                        <h2 style={{fontWeight: "600", marginTop: "1.75rem"}}>
-                            OPENING HOURS
-                        </h2>
-                        <div
-                            style={{
-                                display: "grid",
-                                gridTemplateColumns: "repeat(3, 1fr)",
-                                marginTop: "1rem",
-                            }}
-                        >
-                            <div style={{color: "#4B5563"}}>
+                        <Description>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.
+                        </Description>
+                        <SectionTitle>OPENING HOURS</SectionTitle>
+                        <OpeningHours>
+                            <div>
                                 <p>Monday - Friday</p>
                                 <p>8:00 am to 9:00 pm</p>
                             </div>
-                            <div style={{color: "#4B5563"}}>
+                            <div>
                                 <p>Saturday</p>
                                 <p>8:00 am to 9:00 pm</p>
                             </div>
-                            <div style={{color: "#4B5563"}}>
+                            <div>
                                 <p>Sunday</p>
                                 <p>CLOSED</p>
                             </div>
-                        </div>
+                        </OpeningHours>
                     </div>
+                    <List>
+                        <ListItem>Menu</ListItem>
+                        <ListItem>About us</ListItem>
+                        <ListItem>Contact us</ListItem>
+                        <li>Main dishes</li>
+                    </List>
+                    <List>
+                        <ListItem>Fish & Viggies</ListItem>
+                        <ListItem>Tofu Chili</ListItem>
+                        <ListItem>Egg & Cucumber</ListItem>
+                        <li>Lumpia w/Sauce</li>
+                    </List>
+                    <SocialIcons>
+                        <SocialIcon>
+                            <FaFacebookF/>
+                        </SocialIcon>
+                        <SocialIcon>
+                            <FaInstagram/>
+                        </SocialIcon>
+                        <SocialIcon>
+                            <FaTwitter/>
+                        </SocialIcon>
+                    </SocialIcons>
+                </GridContainer>
 
-                    {/* Navigácia */}
-                    <div>
-                        <ul style={{color: "#4B5563", cursor: "pointer"}}>
-                            <li style={{marginBottom: "0.5rem"}}>Menu</li>
-                            <li style={{marginBottom: "0.5rem"}}>About us</li>
-                            <li style={{marginBottom: "0.5rem"}}>Contact us</li>
-                            <li>Main dishes</li>
-                        </ul>
-                    </div>
+                <Divider/>
 
-                    {/* Jedlá */}
-                    <div>
-                        <ul style={{color: "#4B5563", cursor: "pointer"}}>
-                            <li style={{marginBottom: "0.5rem"}}>Fish & Viggies</li>
-                            <li style={{marginBottom: "0.5rem"}}>Tofu Chili</li>
-                            <li style={{marginBottom: "0.5rem"}}>Egg & Cucumber</li>
-                            <li>Lumpia w/Sauce</li>
-                        </ul>
-                    </div>
-
-                    {/* Sociálne siete */}
-                    <div>
-                        <div style={{display: "flex", gap: "1rem", color: "#4B5563"}}>
-                            <div
-                                style={{
-                                    cursor: "pointer",
-                                    borderRadius: "50%",
-                                    border: "1px solid black",
-                                    padding: "0.5rem",
-                                    textAlign: "center",
-                                }}
-                            >
-                                <FaFacebookF/>
-                            </div>
-                            <div
-                                style={{
-                                    cursor: "pointer",
-                                    borderRadius: "50%",
-                                    border: "1px solid black",
-                                    padding: "0.5rem",
-                                    textAlign: "center",
-                                }}
-                            >
-                                <FaInstagram/>
-                            </div>
-                            <div
-                                style={{
-                                    cursor: "pointer",
-                                    borderRadius: "50%",
-                                    border: "1px solid black",
-                                    padding: "0.5rem",
-                                    textAlign: "center",
-                                }}
-                            >
-                                <FaTwitter/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Oddelovač */}
-                <div
-                    style={{
-                        height: "1px",
-                        width: "100%",
-                        backgroundColor: "#E5E7EB",
-                        marginTop: "5rem",
-                    }}
-                ></div>
-
-                {/* Copyright */}
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        marginTop: "1rem",
-                    }}
-                >
-                    <p style={{color: "#4B5563", fontSize: "0.875rem"}}>
-                        &copy;2025 Restaurants. All Right Reserved. Designed by David
-                    </p>
-                    <div style={{display: "flex", gap: "2.5rem"}}>
-                        <p
-                            style={{
-                                color: "#4B5563",
-                                fontSize: "0.875rem",
-                                cursor: "pointer",
-                            }}
-                        >
-                            Terms of Service
-                        </p>
-                        <p
-                            style={{
-                                color: "#4B5563",
-                                fontSize: "0.875rem",
-                                cursor: "pointer",
-                            }}
-                        >
-                            Privacy Policy
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                <FooterBottom>
+                    <p>&copy;2025 Restaurants. All Right Reserved. Designed by David</p>
+                    <FooterLinks>
+                        <p>Terms of Service</p>
+                        <p>Privacy Policy</p>
+                    </FooterLinks>
+                </FooterBottom>
+            </FooterContent>
+        </FooterContainer>
     );
 }
 
