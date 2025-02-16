@@ -3,332 +3,128 @@ import Pizza2 from "../assets/img/pizza2.png";
 import Pizza3 from "../assets/img/pizza3.png";
 import Pizza4 from "../assets/img/pizza4.png";
 
+import styled from "styled-components";
+
+const DishesCardContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 3rem;
+    padding-bottom: 6rem;`;
+
+const DishesCardSubContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;`;
+
+const DishesSubCard = styled.div`
+    position: relative;
+    background-color: #f3f4f6;
+    border: 4px solid white;
+    border-radius: 3rem 0.75rem 3rem 0.75rem;
+    padding: 1.25rem;`;
+
+const DishesImgContainer = styled.div`
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;`;
+
+const DishesImgSubContainer = styled.div`
+    position: relative;`;
+
+const DishesMainImg = styled.img``;
+
+const DishesPrice = styled.div`
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    border-radius: 50%;
+    background-color: black;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;`;
+
+const DishesCardHeading = styled.h3`
+    font-family: serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+    margin-top: 9rem;
+    text-align: center;`;
+
+const DishesCardDescription = styled.p`
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #4b5563;
+    text-align: center;
+    margin-bottom: 3rem;`;
+
 function DishesCard() {
     return (
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                maxWidth: "80rem",
-                margin: "0 auto",
-                gap: "3rem",
-                paddingBottom: "6rem",
-            }}
-        >
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                }}
-            >
-                <div
-                    style={{
-                        position: "relative",
-                        backgroundColor: "white",
-                        border: "4px solid white",
-                        borderTopLeftRadius: "3rem",
-                        borderBottomRightRadius: "3rem",
-                        borderTopRightRadius: "0.75rem",
-                        borderBottomLeftRadius: "0.75rem",
-                        padding: "1.25rem",
-                    }}
-                >
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "-6rem",
-                            left: 0,
-                            right: 0,
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div style={{position: "relative"}}>
-                            <img src={Pizza1} alt=""/>
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    top: "1.5rem",
-                                    right: 0,
-                                    borderRadius: "50%",
-                                    backgroundColor: "black",
-                                    width: "3.5rem",
-                                    height: "3.5rem",
-                                    color: "white",
-                                    fontWeight: "600",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                }}
-                            >
-                                $12
-                            </div>
-                        </div>
-                    </div>
-                    <h3
-                        style={{
-                            fontFamily: "serif",
-                            fontWeight: "500",
-                            textAlign: "center",
-                            fontSize: "1.125rem",
-                            marginBottom: "1.25rem",
-                            marginTop: "9rem",
-                        }}
-                    >
-                        Lumpia with Sauce
-                    </h3>
-                    <p
-                        style={{
-                            fontSize: "0.875rem",
-                            lineHeight: "1.5rem",
-                            color: "#4b5563",
-                            textAlign: "center",
-                            marginBottom: "3rem",
-                        }}
-                    >
-                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                    </p>
-                </div>
-            </div>
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                }}
-            >
-                <div
-                    style={{
-                        position: "relative",
-                        backgroundColor: "#f3f4f6",
-                        border: "4px solid white",
-                        borderTopLeftRadius: "3rem",
-                        borderBottomRightRadius: "3rem",
-                        borderTopRightRadius: "0.75rem",
-                        borderBottomLeftRadius: "0.75rem",
-                        padding: "1.25rem",
-                    }}
-                >
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "-6rem",
-                            left: 0,
-                            right: 0,
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div style={{position: "relative"}}>
-                            <img src={Pizza2} alt=""/>
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    top: "1.5rem",
-                                    right: 0,
-                                    borderRadius: "50%",
-                                    backgroundColor: "black",
-                                    width: "3.5rem",
-                                    height: "3.5rem",
-                                    color: "white",
-                                    fontWeight: "600",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                }}
-                            >
-                                $12
-                            </div>
-                        </div>
-                    </div>
-                    <h3
-                        style={{
-                            fontFamily: "serif",
-                            fontWeight: "500",
-                            textAlign: "center",
-                            fontSize: "1.125rem",
-                            marginBottom: "1.25rem",
-                            marginTop: "9rem",
-                        }}
-                    >
-                        Fish and Veggie
-                    </h3>
-                    <p
-                        style={{
-                            fontSize: "0.875rem",
-                            lineHeight: "1.5rem",
-                            color: "#4b5563",
-                            textAlign: "center",
-                            marginBottom: "3rem",
-                        }}
-                    >
-                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                    </p>
-                </div>
-            </div>
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                }}
-            >
-                <div
-                    style={{
-                        position: "relative",
-                        backgroundColor: "#f3f4f6",
-                        border: "4px solid white",
-                        borderTopLeftRadius: "3rem",
-                        borderBottomRightRadius: "3rem",
-                        borderTopRightRadius: "0.75rem",
-                        borderBottomLeftRadius: "0.75rem",
-                        padding: "1.25rem",
-                    }}
-                >
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "-6rem",
-                            left: 0,
-                            right: 0,
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div style={{position: "relative"}}>
-                            <img src={Pizza3} alt=""/>
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    top: "1.5rem",
-                                    right: 0,
-                                    borderRadius: "50%",
-                                    backgroundColor: "black",
-                                    width: "3.5rem",
-                                    height: "3.5rem",
-                                    color: "white",
-                                    fontWeight: "600",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                }}
-                            >
-                                $12
-                            </div>
-                        </div>
-                    </div>
-                    <h3
-                        style={{
-                            fontFamily: "serif",
-                            fontWeight: "500",
-                            textAlign: "center",
-                            fontSize: "1.125rem",
-                            marginBottom: "1.25rem",
-                            marginTop: "9rem",
-                        }}
-                    >
-                        Tofu Chili
-                    </h3>
-                    <p
-                        style={{
-                            fontSize: "0.875rem",
-                            lineHeight: "1.5rem",
-                            color: "#4b5563",
-                            textAlign: "center",
-                            marginBottom: "3rem",
-                        }}
-                    >
-                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                    </p>
-                </div>
-            </div>
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                }}
-            >
-                <div
-                    style={{
-                        position: "relative",
-                        backgroundColor: "#f3f4f6",
-                        border: "4px solid white",
-                        borderTopLeftRadius: "3rem",
-                        borderBottomRightRadius: "3rem",
-                        borderTopRightRadius: "0.75rem",
-                        borderBottomLeftRadius: "0.75rem",
-                        padding: "1.25rem",
-                    }}
-                >
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "-6rem",
-                            left: 0,
-                            right: 0,
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div style={{position: "relative"}}>
-                            <img src={Pizza4} alt=""/>
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    top: "1.5rem",
-                                    right: 0,
-                                    borderRadius: "50%",
-                                    backgroundColor: "black",
-                                    width: "3.5rem",
-                                    height: "3.5rem",
-                                    color: "white",
-                                    fontWeight: "600",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                }}
-                            >
-                                $12
-                            </div>
-                        </div>
-                    </div>
-                    <h3
-                        style={{
-                            fontFamily: "serif",
-                            fontWeight: "500",
-                            textAlign: "center",
-                            fontSize: "1.125rem",
-                            marginBottom: "1.25rem",
-                            marginTop: "9rem",
-                        }}
-                    >
-                        Egg and Cucumber
-                    </h3>
-                    <p
-                        style={{
-                            fontSize: "0.875rem",
-                            lineHeight: "1.5rem",
-                            color: "#4b5563",
-                            textAlign: "center",
-                            marginBottom: "3rem",
-                        }}
-                    >
-                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                    </p>
-                </div>
-            </div>
-        </div>
+        <DishesCardContainer>
+            <DishesCardSubContainer>
+                <DishesSubCard>
+                    <DishesImgContainer>
+                        <DishesImgSubContainer>
+                            <DishesMainImg src={Pizza1} alt=""/>
+                            <DishesPrice>$12</DishesPrice>
+                        </DishesImgSubContainer>
+                    </DishesImgContainer>
+                    <DishesCardHeading>Lumpia with Sauce</DishesCardHeading>
+                    <DishesCardDescription>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
+                        tempor</DishesCardDescription>
+                </DishesSubCard>
+            </DishesCardSubContainer>
+            <DishesCardSubContainer>
+                <DishesSubCard>
+                    <DishesImgContainer>
+                        <DishesImgSubContainer>
+                            <DishesMainImg src={Pizza2} alt=""/>
+                            <DishesPrice>$15</DishesPrice>
+                        </DishesImgSubContainer>
+                    </DishesImgContainer>
+                    <DishesCardHeading>Chicken with Sauce</DishesCardHeading>
+                    <DishesCardDescription>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
+                        tempor</DishesCardDescription>
+                </DishesSubCard>
+            </DishesCardSubContainer>
+            <DishesCardSubContainer>
+                <DishesSubCard>
+                    <DishesImgContainer>
+                        <DishesImgSubContainer>
+                            <DishesMainImg src={Pizza3} alt=""/>
+                            <DishesPrice>$20</DishesPrice>
+                        </DishesImgSubContainer>
+                    </DishesImgContainer>
+                    <DishesCardHeading>Beef with Sauce</DishesCardHeading>
+                    <DishesCardDescription>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
+                        tempor</DishesCardDescription>
+                </DishesSubCard>
+            </DishesCardSubContainer>
+            <DishesCardSubContainer>
+                <DishesSubCard>
+                    <DishesImgContainer>
+                        <DishesImgSubContainer>
+                            <DishesMainImg src={Pizza4} alt=""/>
+                            <DishesPrice>$25</DishesPrice>
+                        </DishesImgSubContainer>
+                    </DishesImgContainer>
+                    <DishesCardHeading>Shrimp with Sauce</DishesCardHeading>
+                    <DishesCardDescription>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod
+                        tempor</DishesCardDescription>
+                </DishesSubCard>
+            </DishesCardSubContainer>
+        </DishesCardContainer>
     );
 }
 

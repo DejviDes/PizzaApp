@@ -6,40 +6,34 @@ const NavContainer = styled.nav`
     top: 0;
     width: 100%;
     background-color: white;
-    z-index: 10;
-`;
+    z-index: 10;`;
 
 const NavSubContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem 0;
-`;
+    padding: 3rem 0;`;
 
 const LogoContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 0.75rem;
     align-items: center;
-    cursor: pointer;
-`;
+    cursor: pointer;`;
 
 const Logo = styled.img`
-    margin-bottom: 1.25rem;
-`;
+    margin-bottom: 1.25rem;`;
 
 const LogoText = styled.h2`
     font-size: 1.875rem;
     line-height: 2.25rem;
-    font-weight: 600;
-`;
+    font-weight: 600;`;
 
 const NavLinks = styled.ul`
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
-    color: #4b5563;
-`;
+    color: #4b5563;`;
 
 const NavItem = styled.li`
     cursor: pointer;`;
@@ -51,8 +45,7 @@ const NavButton = styled.a`
     color: white;
     border-radius: 1rem 0.375rem 1rem 0.375rem;
     padding: 1.25rem 1.75rem;
-    white-space: nowrap;
-`;
+    white-space: nowrap;`;
 
 function Navbar() {
     return (
