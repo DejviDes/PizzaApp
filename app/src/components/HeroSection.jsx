@@ -17,7 +17,7 @@ const HeroSubContainer = styled.div`
     margin: 0 auto 4rem;
     padding-top: 13rem;
     padding-left: 2.5rem;
-    paddin-right: 2.5rem;
+    padding-right: 2.5rem;
 `;
 
 const HeroContent = styled.div`
