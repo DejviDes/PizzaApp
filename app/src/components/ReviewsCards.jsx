@@ -5,7 +5,7 @@ import Person1Img from '../assets/img/person1.png';
 // Styled components for the card layout
 const ReviewContainer = styled.div`
     width: 100%;
-    margin-bottom: 15rem;
+    margin-bottom: 20rem;
 `;
 
 const Grid = styled.div`
@@ -68,60 +68,6 @@ function ReviewCards() {
     return (
         <ReviewContainer>
             <Grid>
-                <ReviewCard>
-                    <ReviewImg src={Person1Img} alt=""/>
-                    <Stars>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    </Stars>
-                    <ReviewText>
-                        Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque
-                        penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                        eu aliquam quis. Ornare tincidunt tempus semper
-                    </ReviewText>
-                    <Name>Ama Ampomah</Name>
-                    <Role>CEO & Founder Inc</Role>
-                </ReviewCard>
-
-                {/* Duplicate the ReviewCard component for more static review cards */}
-
-                <ReviewCard>
-                    <ReviewImg src={Person1Img} alt=""/>
-                    <Stars>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    </Stars>
-                    <ReviewText>
-                        Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque
-                        penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                        eu aliquam quis. Ornare tincidunt tempus semper
-                    </ReviewText>
-                    <Name>Ama Ampomah</Name>
-                    <Role>CEO & Founder Inc</Role>
-                </ReviewCard>
-                <ReviewCard>
-                    <ReviewImg src={Person1Img} alt=""/>
-                    <Stars>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                        <Star style={{width: '1.5rem', height: '1.5rem', color: '#fcba03', fill: '#fcba03'}}/>
-                    </Stars>
-                    <ReviewText>
-                        Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque
-                        penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
-                        eu aliquam quis. Ornare tincidunt tempus semper
-                    </ReviewText>
-                    <Name>Ama Ampomah</Name>
-                    <Role>CEO & Founder Inc</Role>
-                </ReviewCard>
                 <ReviewCard>
                     <ReviewImg src={Person1Img} alt=""/>
                     <Stars>

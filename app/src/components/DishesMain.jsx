@@ -49,26 +49,22 @@ const ButtonWrapper = styled.div`
 `;
 
 const ButtonBlack = styled.a`
-    background-color: #000;
+    background-color: #000000;
     font-family: serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)));
     color: white;
     border-radius: 1rem 0.375rem 1rem 0.375rem;
     padding: 1rem 1.75rem;
-    white-space: nowrap;
-    text-decoration: none;
-`;
+    text-wrap: nowrap;`;
 
 const ButtonOrange = styled.a`
     background-color: #EA6D27;
     font-family: serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)));
     color: white;
     border-radius: 1rem 0.375rem 1rem 0.375rem;
     padding: 1rem 1.75rem;
-    white-space: nowrap;
-    text-decoration: none;
-`;
+    text-wrap: nowrap;`;
 
 function DishesMain() {
     return (

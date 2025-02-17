@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
     background-color: white;
     padding-top: 2.5rem;
     padding-bottom: 6rem;
-    margin-top: 15rem;
+    margin-top: 20rem;
 `;
 
 const FooterContent = styled.div`

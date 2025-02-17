@@ -4,7 +4,9 @@ import DishesCard from "./DishesCard";
 import DishesMain from "./DishesMain";
 
 const DishesContainer = styled.div`
-    background-color: #f3f4f6;`;
+    background-color: #f3f4f6;
+    width: 100%;
+`;
 
 const DishesTopContainer = styled.div`
     display: flex;
@@ -18,7 +20,7 @@ const DishesHeading = styled.h1`
     font-family: serif;
     font-size: 3rem;
     line-height: 1rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;`;
 
 const DishesDescription = styled.p`

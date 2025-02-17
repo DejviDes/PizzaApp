@@ -14,9 +14,7 @@ const HeroSubContainer = styled.div`
     align-items: center;
     max-width: 72rem;
     margin: 0 auto 4rem;
-    padding-top: 13rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;`;
+    padding: 13rem 2.5rem 0;`;
 
 const HeroContent = styled.div`
     display: flex;
@@ -27,14 +25,14 @@ const HeroHeading = styled.h1`
     font-family: serif;
     font-size: 3rem;
     line-height: 1;
-    margin-bottom: 4rem;
-    max-width: 24rem;`;
+    max-width: 24rem;
+    margin-bottom: 4rem;`;
 
 const HeroDescription = styled.p`
     color: #4b5563;
     font-size: 0.875rem;
-    max-width: 20rem;
-    line-height: 1.75rem;`;
+    line-height: 1.75rem;
+    max-width: 20rem;`;
 
 const HeroButtonsContainer = styled.div`
     display: flex;
@@ -77,6 +75,11 @@ const HeroSocialsIcon = styled.div`
     padding: 0.5rem;
     color: black;`;
 
+const HeroSocialsLine = styled.div`
+    height: 0;
+    border: 1px solid #e5e7eb;
+    width: 8rem;`;
+
 const HeroImageContainer = styled.div`
     position: relative;
     width: 100%;
@@ -107,6 +110,7 @@ function Herosection() {
                             <HeroSocialsIcon><FaFacebookF/></HeroSocialsIcon>
                             <HeroSocialsIcon><FaInstagram/></HeroSocialsIcon>
                             <HeroSocialsIcon><FaTwitter/></HeroSocialsIcon>
+                            <HeroSocialsLine></HeroSocialsLine>
                         </HeroSocialsSubContainer>
                     </HeroSocialsCntainer>
                 </HeroContent>

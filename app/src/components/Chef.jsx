@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import ChefImg from "../assets/img/chef.png";
 
-const Container = styled.div``;
+const Container = styled.div`
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
 const GridWrapper = styled.div`
     display: grid;
@@ -9,7 +15,6 @@ const GridWrapper = styled.div`
     gap: 1.25rem;
     align-items: center;
     max-width: 72rem;
-    margin: 6rem auto;
     padding: 0 2.5rem;
 `;
 
@@ -39,7 +44,7 @@ const ListWrapper = styled.div`
     font-size: 0.875rem;
     color: #4b5563;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 `;
 
 const List = styled.ul`
@@ -71,31 +76,26 @@ const ButtonWrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1.25rem;
-    margin-top: 2.25rem;
     margin-left: 5rem;
 `;
 
 const ButtonBlack = styled.a`
-    background-color: #000;
+    background-color: #000000;
     font-family: serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)));
     color: white;
     border-radius: 1rem 0.375rem 1rem 0.375rem;
     padding: 1rem 1.75rem;
-    white-space: nowrap;
-    text-decoration: none;
-`;
+    text-wrap: nowrap;`;
 
 const ButtonOrange = styled.a`
-    background-color: #ea6d27;
+    background-color: #EA6D27;
     font-family: serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)));
     color: white;
     border-radius: 1rem 0.375rem 1rem 0.375rem;
     padding: 1rem 1.75rem;
-    white-space: nowrap;
-    text-decoration: none;
-`;
+    text-wrap: nowrap;`;
 
 const ImageWrapper = styled.div`
     display: flex;
