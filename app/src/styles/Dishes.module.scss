@@ -1,0 +1,28 @@
+.DishesContainer {
+  background-color: #f3f4f6;
+  width: 100%;
+}
+
+.DishesTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11rem;
+}
+
+.DishesHeading {
+  text-align: center;
+  font-weight: 500;
+  font-family: serif;
+  font-size: 3rem;
+  line-height: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.DishesDescription {
+  max-width: 20rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+}

@@ -1,127 +1,30 @@
-import styled from "styled-components";
+import styles from '../styles/Footer.module.scss';
 import Logo from "../assets/img/logo.png";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 
-const FooterContainer = styled.footer`
-    width: 100%;
-    background-color: white;
-    padding-top: 2.5rem;
-    padding-bottom: 6rem;
-    margin-top: 20rem;
-`;
-
-const FooterContent = styled.div`
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-`;
-
-const GridContainerFirst = styled.div`
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2.5rem;
-`;
-
-const GridContainerSecond = styled.div`
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2.5rem;
-`;
-
-const LogoContainer = styled.div`
-    grid-column: span 2;
-    display: flex;
-    flex-direction: row;
-    gap: 0.75rem;
-    align-items: center;
-    cursor: pointer;
-`;
-
-const SectionTitle = styled.h2`
-    font-weight: 600;
-`;
-
-const Description = styled.p`
-    color: #4b5563;
-    margin-bottom: 1.25rem;
-`;
-
-const OpeningHours = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 1rem;
-    color: #4b5563;
-`;
-
-const List = styled.ul`
-    color: #4b5563;
-    cursor: pointer;
-`;
-
-const ListItem = styled.li`
-    margin-bottom: 1rem;
-`;
-
-const SocialIcons = styled.div`
-    display: flex;
-    gap: 1rem;
-    color: #4b5563;
-`;
-
-const SocialIcon = styled.div`
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 0.5rem;
-    text-align: center;
-    color: black;
-`;
-
-const Divider = styled.div`
-    height: 1px;
-    width: 100%;
-    background-color: #e5e7eb;
-    margin-top: 5rem;
-`;
-
-const FooterBottom = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    color: #4b5563;
-    font-size: 0.875rem;
-`;
-
-const FooterLinks = styled.div`
-    display: flex;
-    gap: 2.5rem;
-    cursor: pointer;
-`;
-
 function Footer() {
     return (
-        <FooterContainer>
-            <FooterContent>
-                <GridContainerFirst>
-                    <LogoContainer>
+        <footer className={styles.footerContainer}>
+            <div className={styles.footerContent}>
+                <div className={styles.gridContainerFirst}>
+                    <div className={styles.logoContainer}>
                         <img style={{marginBottom: "1.25rem"}} src={Logo} alt="Restaurant Logo"/>
                         <h2 style={{fontSize: "1.875rem", fontWeight: "600"}}>restaurant</h2>
-                    </LogoContainer>
-                    <SectionTitle>NAVIGATION</SectionTitle>
-                    <SectionTitle>DISHES</SectionTitle>
-                    <SectionTitle>FOLLOW US</SectionTitle>
-                </GridContainerFirst>
+                    </div>
+                    <h2 className={styles.sectionTitle}>NAVIGATION</h2>
+                    <h2 className={styles.sectionTitle}>DISHES</h2>
+                    <h2 className={styles.sectionTitle}>FOLLOW US</h2>
+                </div>
 
-                <GridContainerSecond style={{marginTop: "1rem", fontSize: "0.875rem", lineHeight: "1.25rem"}}>
+                <div className={styles.gridContainerSecond}
+                     style={{marginTop: "1rem", fontSize: "0.875rem", lineHeight: "1.25rem"}}>
                     <div style={{gridColumn: "span 2"}}>
-                        <Description>
+                        <p className={styles.description}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.
-                        </Description>
-                        <SectionTitle>OPENING HOURS</SectionTitle>
-                        <OpeningHours>
+                        </p>
+                        <h2 className={styles.sectionTitle}>OPENING HOURS</h2>
+                        <div className={styles.openingHours}>
                             <div>
                                 <p>Monday - Friday</p>
                                 <p>8:00 am to 9:00 pm</p>
@@ -134,44 +37,44 @@ function Footer() {
                                 <p>Sunday</p>
                                 <p>CLOSED</p>
                             </div>
-                        </OpeningHours>
+                        </div>
                     </div>
-                    <List>
-                        <ListItem>Menu</ListItem>
-                        <ListItem>About us</ListItem>
-                        <ListItem>Contact us</ListItem>
+                    <ul className={styles.list}>
+                        <li className={styles.listItem}>Menu</li>
+                        <li className={styles.listItem}>About us</li>
+                        <li className={styles.listItem}>Contact us</li>
                         <li>Main dishes</li>
-                    </List>
-                    <List>
-                        <ListItem>Fish & Viggies</ListItem>
-                        <ListItem>Tofu Chili</ListItem>
-                        <ListItem>Egg & Cucumber</ListItem>
+                    </ul>
+                    <ul className={styles.list}>
+                        <li className={styles.listItem}>Fish & Viggies</li>
+                        <li className={styles.listItem}>Tofu Chili</li>
+                        <li className={styles.listItem}>Egg & Cucumber</li>
                         <li>Lumpia w/Sauce</li>
-                    </List>
-                    <SocialIcons>
-                        <SocialIcon>
+                    </ul>
+                    <div className={styles.socialIcons}>
+                        <div className={styles.socialIcon}>
                             <FaFacebookF/>
-                        </SocialIcon>
-                        <SocialIcon>
+                        </div>
+                        <div className={styles.socialIcon}>
                             <FaInstagram/>
-                        </SocialIcon>
-                        <SocialIcon>
+                        </div>
+                        <div className={styles.socialIcon}>
                             <FaTwitter/>
-                        </SocialIcon>
-                    </SocialIcons>
-                </GridContainerSecond>
+                        </div>
+                    </div>
+                </div>
 
-                <Divider/>
+                <div className={styles.divider}/>
 
-                <FooterBottom>
+                <div className={styles.footerBottom}>
                     <p>&copy;2025 Restaurants. All Right Reserved. Designed by David</p>
-                    <FooterLinks>
+                    <div className={styles.footerLinks}>
                         <p>Terms of Service</p>
                         <p>Privacy Policy</p>
-                    </FooterLinks>
-                </FooterBottom>
-            </FooterContent>
-        </FooterContainer>
+                    </div>
+                </div>
+            </div>
+        </footer>
     );
 }
 

@@ -1,46 +1,21 @@
-import styled from "styled-components";
-
+import styles from "../styles/Dishes.module.scss";
 import DishesCard from "./DishesCard";
 import DishesMain from "./DishesMain";
 
-const DishesContainer = styled.div`
-    background-color: #f3f4f6;
-    width: 100%;
-`;
-
-const DishesTopContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 11rem;`;
-
-const DishesHeading = styled.h1`
-    text-align: center;
-    font-weight: 500;
-    font-family: serif;
-    font-size: 3rem;
-    line-height: 1rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;`;
-
-const DishesDescription = styled.p`
-    max-width: 20rem;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    text-align: center;`;
-
 function Dishes() {
     return (
-        <DishesContainer>
-            <DishesTopContainer>
-                <DishesHeading>Our Special Dishes</DishesHeading>
-                <DishesDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt</DishesDescription>
-            </DishesTopContainer>
+        <div className={styles.DishesContainer}>
+            <div className={styles.DishesTopContainer}>
+                <h1 className={styles.DishesHeading}>Our Special Dishes</h1>
+                <p className={styles.DishesDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </p>
+            </div>
             <DishesCard/>
             <DishesMain/>
-        </DishesContainer>
+        </div>
     );
 }
 
 export default Dishes;
+
