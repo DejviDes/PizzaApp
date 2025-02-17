@@ -1,4 +1,4 @@
-import styles from "./DishesMain.module.scss";
+import styles from "../styles/DishesMain.module.scss";
 import DishesMainImg from "../assets/img/dishesMainImg.png";
 
 function DishesMain() {

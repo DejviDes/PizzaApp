@@ -1,4 +1,4 @@
-import styles from './ReviewCards.module.scss';
+import styles from '../styles/ReviewsCards.module.scss';
 import {Star} from 'lucide-react';
 import Person1Img from '../assets/img/person1.png';
 
