@@ -16,9 +16,16 @@ const FooterContent = styled.div`
     padding: 0 2rem;
 `;
 
-const GridContainer = styled.div`
+const GridContainerFirst = styled.div`
     display: grid;
     align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+`;
+
+const GridContainerSecond = styled.div`
+    display: grid;
+    align-items: start;
     grid-template-columns: repeat(5, 1fr);
     gap: 2.5rem;
 `;
@@ -54,7 +61,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 `;
 
 const SocialIcons = styled.div`
@@ -97,17 +104,17 @@ function Footer() {
     return (
         <FooterContainer>
             <FooterContent>
-                <GridContainer>
+                <GridContainerFirst>
                     <LogoContainer>
-                        <img src={Logo} alt="Restaurant Logo"/>
+                        <img style={{marginBottom: "1.25rem"}} src={Logo} alt="Restaurant Logo"/>
                         <h2 style={{fontSize: "1.875rem", fontWeight: "600"}}>restaurant</h2>
                     </LogoContainer>
                     <SectionTitle>NAVIGATION</SectionTitle>
                     <SectionTitle>DISHES</SectionTitle>
                     <SectionTitle>FOLLOW US</SectionTitle>
-                </GridContainer>
+                </GridContainerFirst>
 
-                <GridContainer style={{marginTop: "2rem", fontSize: "0.875rem", lineHeight: "1.25rem"}}>
+                <GridContainerSecond style={{marginTop: "1rem", fontSize: "0.875rem", lineHeight: "1.25rem"}}>
                     <div style={{gridColumn: "span 2"}}>
                         <Description>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -152,7 +159,7 @@ function Footer() {
                             <FaTwitter/>
                         </SocialIcon>
                     </SocialIcons>
-                </GridContainer>
+                </GridContainerSecond>
 
                 <Divider/>
 
