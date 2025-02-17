@@ -1,0 +1,105 @@
+.HeroContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.HeroSubContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto 4rem;
+  padding: 13rem 2.5rem 0;
+}
+
+.HeroContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.HeroHeading {
+  font-weight: 500;
+  font-family: serif;
+  font-size: 3rem;
+  line-height: 1;
+  max-width: 24rem;
+  margin-bottom: 4rem;
+}
+
+.HeroDescription {
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  max-width: 20rem;
+}
+
+.HeroButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.HeroFirstButton,
+.HeroSecondButton {
+  font-family: serif;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.12));
+  color: white;
+  border-radius: 1rem 0.375rem 1rem 0.375rem;
+  padding: 1rem 1.75rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.HeroFirstButton {
+  background-color: #000000;
+}
+
+.HeroSecondButton {
+  background-color: #EA6D27;
+}
+
+.HeroSocialsContainer {
+  margin-top: 4rem;
+}
+
+.HeroSocialsSubContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #4b5563;
+  align-items: center;
+}
+
+.HeroSocialsIcon {
+  cursor: pointer;
+  border-radius: 9999px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  color: black;
+}
+
+.HeroSocialsLine {
+  height: 0;
+  border: 1px solid #e5e7eb;
+  width: 8rem;
+}
+
+.HeroImageContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.HeroImgMain {
+  width: 100%;
+  height: auto;
+}
+
+.HeroImgSub {
+  position: absolute;
+  bottom: 2rem;
+  left: -12rem;
+}
