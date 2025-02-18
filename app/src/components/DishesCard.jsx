@@ -5,31 +5,61 @@ import Pizza3 from "../assets/img/pizza3.png";
 import Pizza4 from "../assets/img/pizza4.png";
 
 function DishesCard() {
-    const dishes = [
-        {img: Pizza1, price: "$12", title: "Lumpia with Sauce"},
-        {img: Pizza2, price: "$15", title: "Chicken with Sauce"},
-        {img: Pizza3, price: "$20", title: "Beef with Sauce"},
-        {img: Pizza4, price: "$25", title: "Shrimp with Sauce"},
-    ];
-
     return (
         <div className={styles.DishesCardContainer}>
-            {dishes.map((dish, index) => (
-                <div key={index} className={styles.DishesCardSubContainer}>
-                    <div className={styles.DishesSubCard}>
-                        <div className={styles.DishesImgContainer}>
-                            <div className={styles.DishesImgSubContainer}>
-                                <img className={styles.DishesMainImg} src={dish.img} alt=""/>
-                                <div className={styles.DishesPrice}>{dish.price}</div>
-                            </div>
+            <div className={styles.DishesSubContainer}>
+                <div className={styles.DishesSubCard}>
+                    <div className={styles.DishesImgContainer}>
+                        <div className={styles.DishesImgSubContainer}>
+                            <img className={styles.DishesMainImg} src={Pizza1} alt="Lumpia with Sauce"/>
+                            <div className={styles.DishesPrice}>$12</div>
                         </div>
-                        <h3 className={styles.DishesCardHeading}>{dish.title}</h3>
-                        <p className={styles.DishesCardDescription}>
-                            Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor
-                        </p>
                     </div>
+                    <h3 className={styles.DishesCardHeading}>Lumpia with Sauce</h3>
+                    <p className={styles.DishesCardDescription}>
+                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
                 </div>
-            ))}
+
+                <div className={styles.DishesSubCard}>
+                    <div className={styles.DishesImgContainer}>
+                        <div className={styles.DishesImgSubContainer}>
+                            <img className={styles.DishesMainImg} src={Pizza2} alt="Chicken with Sauce"/>
+                            <div className={styles.DishesPrice}>$15</div>
+                        </div>
+                    </div>
+                    <h3 className={styles.DishesCardHeading}>Chicken with Sauce</h3>
+                    <p className={styles.DishesCardDescription}>
+                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+
+                <div className={styles.DishesSubCard}>
+                    <div className={styles.DishesImgContainer}>
+                        <div className={styles.DishesImgSubContainer}>
+                            <img className={styles.DishesMainImg} src={Pizza3} alt="Beef with Sauce"/>
+                            <div className={styles.DishesPrice}>$20</div>
+                        </div>
+                    </div>
+                    <h3 className={styles.DishesCardHeading}>Beef with Sauce</h3>
+                    <p className={styles.DishesCardDescription}>
+                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+
+                <div className={styles.DishesSubCard}>
+                    <div className={styles.DishesImgContainer}>
+                        <div className={styles.DishesImgSubContainer}>
+                            <img className={styles.DishesMainImg} src={Pizza4} alt="Shrimp with Sauce"/>
+                            <div className={styles.DishesPrice}>$25</div>
+                        </div>
+                    </div>
+                    <h3 className={styles.DishesCardHeading}>Shrimp with Sauce</h3>
+                    <p className={styles.DishesCardDescription}>
+                        Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }

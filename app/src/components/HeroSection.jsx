@@ -3,6 +3,13 @@ import HeroImg from "../assets/img/heroImg.png";
 import HeroSubImg from "../assets/img/heroSubImg.png";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 
+{/*@media (max-width: 575px) {}
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}*/
+}
+
 function Herosection() {
     return (
         <div className={styles.HeroContainer}>

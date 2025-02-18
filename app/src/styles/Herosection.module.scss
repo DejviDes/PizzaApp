@@ -2,20 +2,39 @@
   width: 100%;
   min-height: 100vh;
   background-color: white;
+
+  @media (max-width: 575px) {
+    padding-bottom: 4rem;
+  }
 }
 
 .HeroSubContainer {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
+  display: flex;
+  justify-content: center;
   max-width: 72rem;
-  margin: 0 auto 4rem;
-  padding: 13rem 2.5rem 0;
+  padding: 16rem 2.5rem 0;
+
+  text-align: center;
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    max-width: 72rem;
+    margin: 0 auto 4rem;
+    padding: 13rem 2.5rem 0;
+    text-align: left;
+  }
 }
 
 .HeroContent {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    align-items: flex-start;
+  }
 }
 
 .HeroHeading {
@@ -87,10 +106,15 @@
 }
 
 .HeroImageContainer {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
 }
 
 .HeroImgMain {

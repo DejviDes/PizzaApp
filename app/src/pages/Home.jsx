@@ -5,14 +5,14 @@ import Chef from "../components/Chef";
 import Reviews from "../components/Reviews";
 
 function Home() {
-  return (
-    <Layout>
-      <Herosection />
-      <Dishes />
-      <Chef />
-      <Reviews />
-    </Layout>
-  );
+    return (
+        <Layout>
+            <Herosection/>
+            <Dishes/>
+            {/* <Chef />
+            <Reviews />*/}
+        </Layout>
+    );
 }
 
 export default Home;
