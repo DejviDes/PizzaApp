@@ -1,14 +1,22 @@
 .Container {
+  width: 100%;
   padding: 0 2rem 8rem;
 }
 
 .GridWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
   max-width: 80rem;
   margin: 4rem auto;
   padding: 0 2.5rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .ImageWrapper {
@@ -20,14 +28,20 @@
 .ContentWrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .Heading {
   font-weight: 500;
   font-family: serif;
   font-size: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   max-width: 20rem;
 }
 

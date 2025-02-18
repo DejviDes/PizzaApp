@@ -9,16 +9,14 @@ function DishesMain() {
                     <img src={DishesMainImg} alt=""/>
                 </div>
                 <div className={styles.ContentWrapper}>
-                    <div>
-                        <h1 className={styles.Heading}>Welcome to Our Restaurant</h1>
-                        <p className={styles.Paragraph}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <div className={styles.ButtonWrapper}>
-                            <a href="" className={styles.ButtonBlack}>Menu</a>
-                            <a href="" className={styles.ButtonOrange}>Book a table</a>
-                        </div>
+                    <h1 className={styles.Heading}>Welcome to Our Restaurant</h1>
+                    <p className={styles.Paragraph}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div className={styles.ButtonWrapper}>
+                        <a href="" className={styles.ButtonBlack}>Menu</a>
+                        <a href="" className={styles.ButtonOrange}>Book a table</a>
                     </div>
                 </div>
             </div>
