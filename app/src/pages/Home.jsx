@@ -9,8 +9,8 @@ function Home() {
         <Layout>
             <Herosection/>
             <Dishes/>
-            {/* <Chef />
-            <Reviews />*/}
+            <Chef/>
+            <Reviews/>
         </Layout>
     );
 }

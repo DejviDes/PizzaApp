@@ -13,17 +13,27 @@
 }
 
 .gridContainerFirst {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+  }
 }
 
 .gridContainerSecond {
   display: grid;
   align-items: start;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: 768px) {
+
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+  }
 }
 
 .logoContainer {

@@ -1,10 +1,14 @@
 .HeroContainer {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: white;
 
   @media (max-width: 575px) {
     padding-bottom: 4rem;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 100vh;
   }
 }
 
