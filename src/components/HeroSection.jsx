@@ -1,4 +1,4 @@
-import styles from "../styles/HeroSection.module.scss";
+import styles from "../styles/Herosection.module.scss";
 import HeroImg from "../assets/img/heroImg.png";
 import HeroSubImg from "../assets/img/heroSubImg.png";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
