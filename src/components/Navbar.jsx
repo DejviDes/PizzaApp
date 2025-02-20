@@ -2,7 +2,7 @@ import {useState} from "react";
 import LogoImg from "../assets/img/logo.png";
 import {RxHamburgerMenu} from "react-icons/rx";
 import {IoClose} from "react-icons/io5";
-import styles from "../styles/Navbar.module.scss";
+import styles from "../styles/NavBar.module.scss";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
