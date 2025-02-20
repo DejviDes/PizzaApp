@@ -1,16 +1,20 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import styles from './styles/Layout.module.scss';
+import PropTypes from 'prop-types';
 
-function Layout({ children }) {
-  return (
-    <div
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-    >
-      <Navbar />
-      <main style={{ flexGrow: 1 }}>{children}</main>
-      <Footer />
-    </div>
-  );
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+};
+
+function Layout({children}) {
+    return (
+        <div className={styles.layout}>
+            <Navbar/>
+            <main className={styles.main}>{children}</main>
+            {/*<Footer/>*/}
+        </div>
+    );
 }
 
 export default Layout;

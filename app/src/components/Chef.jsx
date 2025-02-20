@@ -1,138 +1,50 @@
-import styled from "styled-components";
+import styles from "../styles/Chef.module.scss";
 import ChefImg from "../assets/img/chef.png";
-
-const Container = styled.div`
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-
-const GridWrapper = styled.div`
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 1.25rem;
-    align-items: center;
-    max-width: 72rem;
-    padding: 0 2.5rem;
-`;
-
-const ContentWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
-
-const Heading = styled.h1`
-    font-weight: 500;
-    font-family: serif;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    max-width: 20rem;
-`;
-
-const Paragraph = styled.p`
-    color: #4b5563;
-    line-height: 1.5rem;
-    font-size: 0.875rem;
-    max-width: 18rem;
-`;
-
-const ListWrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 0.875rem;
-    color: #4b5563;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-`;
-
-const List = styled.ul`
-    max-width: 15rem;
-`;
-
-const ListItem = styled.li`
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.25rem;
-`;
-
-const Checkmark = styled.span`
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ea6d27;
-    color: white;
-    border-radius: 50%;
-    margin-right: 0.75rem;
-    flex-shrink: 0;
-    font-size: 0.75rem;
-    font-weight: bold;
-`;
-
-const ButtonWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
-    margin-left: 5rem;
-`;
-
-const ButtonBlack = styled.a`
-    background-color: #000000;
-    font-family: serif;
-    filter: drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)));
-    color: white;
-    border-radius: 1rem 0.375rem 1rem 0.375rem;
-    padding: 1rem 1.75rem;
-    text-wrap: nowrap;`;
-
-const ButtonOrange = styled.a`
-    background-color: #EA6D27;
-    font-family: serif;
-    filter: drop-shadow(var(0 3px 3px rgb(0 0 0 / 0.12)));
-    color: white;
-    border-radius: 1rem 0.375rem 1rem 0.375rem;
-    padding: 1rem 1.75rem;
-    text-wrap: nowrap;`;
-
-const ImageWrapper = styled.div`
-    display: flex;
-`;
 
 function Chef() {
     return (
-        <Container>
-            <GridWrapper>
-                <ContentWrapper>
-                    <Heading>Our Expert Chef</Heading>
-                    <Paragraph>
+        <div className={styles.container}>
+            <div className={styles.gridWrapper}>
+                <div className={styles.contentWrapper}>
+                    <h1 className={styles.heading}>Our Expert Chef</h1>
+                    <p className={styles.paragraph}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </Paragraph>
-                    <ListWrapper>
-                        <List>
-                            <ListItem><Checkmark>✓</Checkmark><span>Lorem ipsum dolor sit amet, consectetur</span></ListItem>
-                            <ListItem><Checkmark>✓</Checkmark><span>Lorem ipsum dolor sit amet, consectetur</span></ListItem>
-                            <ListItem><Checkmark>✓</Checkmark><span>Lorem ipsum dolor sit amet, consectetur</span></ListItem>
-                        </List>
-                        <List>
-                            <ListItem><Checkmark>✓</Checkmark><span>Lorem ipsum dolor sit amet, consectetur</span></ListItem>
-                            <ListItem><Checkmark>✓</Checkmark><span>Lorem ipsum dolor sit amet, consectetur</span></ListItem>
-                            <ListItem><Checkmark>✓</Checkmark><span>Lorem ipsum dolor sit amet, consectetur</span></ListItem>
-                        </List>
-                    </ListWrapper>
-                    <ButtonWrapper>
-                        <ButtonBlack href="">Menu</ButtonBlack>
-                        <ButtonOrange href="">Book a table</ButtonOrange>
-                    </ButtonWrapper>
-                </ContentWrapper>
-                <ImageWrapper>
-                    <img src={ChefImg} alt=""/>
-                </ImageWrapper>
-            </GridWrapper>
-        </Container>
+                    </p>
+                    <div className={styles.listWrapper}>
+                        <ul className={styles.list}>
+                            <li className={styles.listItem}><span className={styles.checkmark}>✓</span>Lorem ipsum dolor
+                                sit amet, consectetur
+                            </li>
+                            <li className={styles.listItem}><span className={styles.checkmark}>✓</span>Lorem ipsum dolor
+                                sit amet, consectetur
+                            </li>
+                            <li className={styles.listItem}><span className={styles.checkmark}>✓</span>Lorem ipsum dolor
+                                sit amet, consectetur
+                            </li>
+                        </ul>
+                        <ul className={styles.list}>
+                            <li className={styles.listItem}><span className={styles.checkmark}>✓</span>Lorem ipsum dolor
+                                sit amet, consectetur
+                            </li>
+                            <li className={styles.listItem}><span className={styles.checkmark}>✓</span>Lorem ipsum dolor
+                                sit amet, consectetur
+                            </li>
+                            <li className={styles.listItem}><span className={styles.checkmark}>✓</span>Lorem ipsum dolor
+                                sit amet, consectetur
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={styles.buttonWrapper}>
+                        <a href="" className={styles.buttonBlack}>Menu</a>
+                        <a href="" className={styles.buttonOrange}>Book a table</a>
+                    </div>
+                </div>
+                <div className={styles.imageWrapper}>
+                    <img src={ChefImg} alt="Chef"/>
+                </div>
+            </div>
+        </div>
     );
 }
 

@@ -1,0 +1,90 @@
+.Container {
+  width: 100%;
+  padding: 0 2rem 8rem;
+
+  @media (max-width: 575px) {
+    padding-bottom: 2rem;
+  }
+}
+
+.GridWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  max-width: 80rem;
+  margin: 4rem auto;
+  padding: 0 2.5rem;
+
+  @media (max-width: 575px) {
+    margin-top: 0;
+    gap: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.ImageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.Heading {
+  font-weight: 500;
+  font-family: serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  max-width: 20rem;
+}
+
+.Paragraph {
+  color: #4b5563;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  max-width: 18rem;
+}
+
+.ButtonWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.Button {
+  font-family: serif;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.12));
+  color: white;
+  border-radius: 1rem 0.375rem 1rem 0.375rem;
+  padding: 1rem 1.75rem;
+  text-wrap: nowrap;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ButtonBlack {
+  @extend .Button;
+  background-color: #000000;
+}
+
+.ButtonOrange {
+  @extend .Button;
+  background-color: #EA6D27;
+}
