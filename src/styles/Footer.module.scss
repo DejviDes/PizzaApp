@@ -1,9 +1,14 @@
 .footerContainer {
-  width: 100%;
-  background-color: white;
-  padding-top: 2.5rem;
-  padding-bottom: 6rem;
-  margin-top: 20rem;
+  display: none;
+
+  @media (min-width: 992px) {
+    width: 100%;
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 6rem;
+    margin-top: 20rem;
+    display: block;
+  }
 }
 
 .footerContent {
