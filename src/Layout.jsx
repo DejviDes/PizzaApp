@@ -12,7 +12,6 @@ function Layout({children}) {
         <div className={styles.layout}>
             <Navbar/>
             <main className={styles.main}>{children}</main>
-
         </div>
     );
 }
