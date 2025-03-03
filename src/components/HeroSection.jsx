@@ -10,7 +10,7 @@ import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 @media (min-width: 1200px) {}*/
 }
 
-function Herosection() {
+function HeroSection() {
     return (
         <div className={styles.HeroContainer}>
             <div className={styles.HeroSubContainer}>
@@ -42,4 +42,4 @@ function Herosection() {
     );
 }
 
-export default Herosection;
+export default HeroSection;

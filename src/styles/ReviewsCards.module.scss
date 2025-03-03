@@ -13,7 +13,6 @@
   align-items: center;
   gap: 5rem;
 
-
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,7 +21,6 @@
     max-width: 80rem;
     margin: 0 auto;
   }
-
 }
 
 .reviewCard {

@@ -1,5 +1,5 @@
 import Layout from "../Layout";
-import Herosection from "../components/HeroSection";
+import HeroSection from "../components/HeroSection";
 import Dishes from "../components/Dishes";
 import Chef from "../components/Chef";
 import Reviews from "../components/Reviews";
@@ -7,7 +7,7 @@ import Reviews from "../components/Reviews";
 function Home() {
     return (
         <Layout>
-            <Herosection/>
+            <HeroSection/>
             <Dishes/>
             <Chef/>
             <Reviews/>
