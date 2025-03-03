@@ -2,7 +2,7 @@ import styles from '../styles/OldFooter.module.scss';
 import Logo from "../assets/img/logo.png";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 
-function Footer() {
+function OldFooter() {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
@@ -78,4 +78,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default OldFooter;

@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import OldFooter from "./components/OldFooter.jsx";
 import styles from './styles/Layout.module.scss';
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,7 @@ function Layout({children}) {
         <div className={styles.layout}>
             <Navbar/>
             <main className={styles.main}>{children}</main>
-            <Footer/>
+            <OldFooter/>
         </div>
     );
 }
