@@ -1,4 +1,4 @@
-import styles from '../styles/Footer.module.scss';
+import styles from '../styles/OldFooter.module.scss';
 import Logo from "../assets/img/logo.png";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 
