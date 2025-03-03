@@ -38,11 +38,15 @@
 
 .newsletterSection {
   display: none;
+  height: 0;
+  overflow: hidden;
 
   @media (min-width: 992px) {
     position: absolute;
     bottom: -12.5rem;
     display: block;
+    height: auto;
+    overflow: visible;
   }
 }
 
