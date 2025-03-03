@@ -3,7 +3,10 @@
   background-color: white;
   padding-top: 2.5rem;
   padding-bottom: 6rem;
-  margin-top: 20rem;
+
+  @media (min-width: 992px) {
+    margin-top: 20rem;
+  }
 }
 
 .footerContent {
@@ -12,18 +15,19 @@
   padding: 0 2rem;
 }
 
-.gridContainerFirst {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2.5rem;
-}
-
-.gridContainerSecond {
+.gridContainer {
   display: grid;
   align-items: start;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+
+  @media (max-width: 575px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .logoContainer {

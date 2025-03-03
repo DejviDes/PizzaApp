@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import OldFooter from "./components/OldFooter.jsx";
+import OldFooter from "./components/Footer.jsx";
 import styles from './styles/Layout.module.scss';
 import PropTypes from 'prop-types';
 
