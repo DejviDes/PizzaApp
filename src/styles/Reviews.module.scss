@@ -1,9 +1,9 @@
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f3f4f6;
-  position: relative;
   padding: 0 20px;
 }
 
@@ -19,11 +19,11 @@
 }
 
 .heading {
-  text-align: center;
-  font-weight: 500;
-  font-family: serif;
   font-size: 3rem;
+  font-family: serif;
+  font-weight: 500;
   line-height: 3.5rem;
+  text-align: center;
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
@@ -51,10 +51,10 @@
 }
 
 .newsletterContent {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .newsletterImage {
@@ -63,13 +63,13 @@
 }
 
 .promoText {
-  font-weight: 500;
-  font-family: serif;
-  font-size: 1rem;
-  text-align: center;
-  max-width: 45rem;
   position: absolute;
   top: 12.5rem;
+  max-width: 45rem;
+  font-size: 1rem;
+  font-family: serif;
+  font-weight: 500;
+  text-align: center;
   color: white;
   letter-spacing: 0.1rem;
   padding: 0 1rem;
@@ -88,11 +88,11 @@
 }
 
 .inputWrapper {
+  position: absolute;
+  bottom: .5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: .5rem;
 
 
   @media (min-width: 992px) {
@@ -107,11 +107,11 @@
 .emailInput {
   width: 20rem;
   height: 1.5rem;
-  border-radius: 1rem;
   border: none;
-  margin-top: 2.5rem;
+  border-radius: 1rem;
   background-color: white;
   color: #4b5563;
+  margin-top: 2.5rem;
   padding: 0 1rem;
 
   @media (min-width: 576px) {
@@ -127,17 +127,17 @@
 }
 
 .subscribeButton {
-  width: 6rem;
-  height: 2.5rem;
-  border-radius: .75rem;
-  border: none;
-  margin-top: 1rem;
-  background-color: #ea6d27;
-  color: white;
-  font-weight: 500;
   position: absolute;
   bottom: 0.5rem;
   right: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: .75rem;
+  background-color: #ea6d27;
+  color: white;
+  font-weight: 500;
+  margin-top: 1rem;
 
   @media (min-width: 576px) {
     width: 8rem;
@@ -145,10 +145,10 @@
   }
 
   @media (min-width: 992px) {
-    border-radius: 1rem;
-    width: 10rem;
-    height: 3.5rem;
     bottom: 0.75rem;
     right: 1rem;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 1rem;
   }
 }

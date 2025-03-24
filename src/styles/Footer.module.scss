@@ -31,11 +31,11 @@
 }
 
 .logoContainer {
-  grid-column: span 2;
   display: flex;
-  flex-direction: row;
-  gap: 0.75rem;
   align-items: center;
+  flex-direction: row;
+  grid-column: span 2;
+  gap: 0.75rem;
   cursor: pointer;
 }
 
@@ -71,17 +71,17 @@
 }
 
 .socialIcon {
-  cursor: pointer;
-  border-radius: 50%;
-  border: 1px solid black;
-  padding: 0.5rem;
   text-align: center;
   color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .divider {
-  height: 1px;
   width: 100%;
+  height: 1px;
   background-color: #e5e7eb;
   margin-top: 5rem;
 }
@@ -89,9 +89,9 @@
 .footerBottom {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
-  color: #4b5563;
   font-size: 0.875rem;
+  color: #4b5563;
+  margin-top: 1rem;
 }
 
 .footerLinks {
