@@ -24,11 +24,11 @@
   text-align: center;
 
   @media (min-width: 768px) {
+    max-width: 72rem;
     display: grid;
+    align-items: center;
     grid-template-columns: 3fr 2fr;
     gap: 1.25rem;
-    align-items: center;
-    max-width: 72rem;
     text-align: left;
   }
 }
@@ -39,12 +39,12 @@
 }
 
 .heading {
+  max-width: 20rem;
+  font-size: 3rem;
   font-weight: 500;
   font-family: serif;
-  font-size: 3rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  max-width: 20rem;
 
   @media (min-width: 768px) {
     margin-top: 0;
@@ -52,10 +52,10 @@
 }
 
 .paragraph {
-  color: #4b5563;
-  line-height: 1.5rem;
-  font-size: 0.875rem;
   max-width: 18rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #4b5563;
 }
 
 .listWrapper {
@@ -63,7 +63,6 @@
   color: #4b5563;
   margin-top: 3rem;
   margin-bottom: 4rem;
-
 
   @media (min-width: 576px) {
     display: grid;
@@ -90,13 +89,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
   background-color: #ea6d27;
   color: white;
   border-radius: 50%;
   margin-right: 0.75rem;
-  flex-shrink: 0;
-  font-size: 0.75rem;
-  font-weight: bold;
 }
 
 .buttonWrapper {
@@ -104,6 +103,7 @@
   flex-direction: row;
   gap: 1.25rem;
   margin: 0 auto;
+
   @media (min-width: 576px) {
     margin-left: 5rem;
   }
