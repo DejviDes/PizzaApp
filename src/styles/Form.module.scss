@@ -1,0 +1,124 @@
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.form {
+  margin-top: 15rem;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: bold; /* Tučný nadpis */
+  font-size: 2em; /* Väčší nadpis */
+}
+
+.label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.radio,
+.checkbox {
+  margin-right: 8px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset {
+  background-color: #f44336;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.reset:hover {
+  background-color: #e53935;
+}
+
+.required {
+  border-left: 4px solid #ff9800;
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 20px;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.checkbox-container,
+.radio-container {
+  display: flex;
+  flex-direction: row; /* Rozmiestni checkboxy a radio buttony vedľa seba */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox {
+  transform: scale(1.4);
+  margin-right: 10px;
+}
+
+.inlineCheckbox {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.checkbox + label,
+.radio + label {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.submitInfo {
+  margin-top: 4rem;
+}
